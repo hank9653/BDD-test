@@ -1,0 +1,6 @@
+version: '3'
+services:
+  bdd_test:
+    build: .
+    volumes:
+     - ./features:/usr/src/app/features
