@@ -6,7 +6,7 @@ git clone https://github.com/hank9653/BDD-test.git
 cd BDD-test
 ```
 
-docker-compose.yml的volumes載入要測試的script
+docker-compose.yml的volumes載入要測試的script
 
 ```
 version: '3'
