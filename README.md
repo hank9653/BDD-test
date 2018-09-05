@@ -12,7 +12,7 @@ docker-compose.yml的volumes載入要測試的script
 version: '3'
 services:
   bdd_test:
-    build: .
+    image: hank9653/bdd-test
     volumes:
      - ./features:/usr/src/app/features
 ```
