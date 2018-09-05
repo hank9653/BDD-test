@@ -5,8 +5,6 @@ const puppeteer = require('puppeteer');
 
 let browser
 let page
-let jobPostName
-let jobPostDescription
 
 Given('I am on the Google search page',{timeout: 5*1000}, async function(){
 
