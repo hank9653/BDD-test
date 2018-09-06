@@ -9,10 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "cucumber": "^4.2.1"
-  },
+  "devDependencies": {},
   "dependencies": {
+    "chai": "^4.1.2",
+    "cucumber": "^4.2.1",
     "puppeteer": "^1.7.0"
   }
 }
