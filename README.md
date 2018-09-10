@@ -1,29 +1,38 @@
 # 部署
 
-下載專案
+download project
 ```
 git clone https://github.com/hank9653/BDD-test.git
 cd BDD-test
 ```
 
-docker-compose.yml的volumes載入要測試的script
+build docker docker image
 
 ```
-version: '3'
-services:
-  bdd_test:
-    image: hank9653/bdd-test
-    volumes:
-     - ./features:/usr/src/app/features
+docker build -t bdd-test .
 ```
 
 
-啟動指令
+run docker container and entry container
 ```
-docker-compose up
+docker run -it --rm bdd-test bash
 ```
 
-結束指令
+
+puppeteer must set "--no-sandbox" arg.
 ```
-docker-compose down
+browser = await puppeteer.launch({
+    args: ['--no-sandbox']
+});
+```
+
+BDD script test
+```
+$npm test
+```
+
+
+exit container
+```
+$exit
 ```

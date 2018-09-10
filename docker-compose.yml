@@ -1,6 +1,0 @@
-version: '3'
-services:
-  bdd_test:
-    image: hank9653/bdd-test
-    volumes:
-     - ./features:/usr/src/app/features
